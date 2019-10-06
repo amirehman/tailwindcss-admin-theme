@@ -1,0 +1,100 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+body {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+
+/* line 13, ../sass/screen.scss */
+.bgthemecolor {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+
+/* line 19, ../sass/screen.scss */
+.bgthemecolor-onhover:hover {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+
+/* line 25, ../sass/screen.scss */
+.header-line {
+  top: 50%;
+  width: 96%;
+  background: rgba(92, 92, 92, 0.1);
+}
+
+/* line 31, ../sass/screen.scss */
+.dropdown {
+  top: 110%;
+  border: 1px solid #e8e8e885;
+}
+/* line 35, ../sass/screen.scss */
+.dropdown.toparrow:after, .dropdown.toparrow:before {
+  bottom: 100%;
+  left: 90%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 46, ../sass/screen.scss */
+.dropdown.toparrow:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #d3d3d3;
+  border-width: 11px;
+  margin-left: -11px;
+}
+/* line 52, ../sass/screen.scss */
+.dropdown.toparrow:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+/* line 64, ../sass/screen.scss */
+.header-right-nav > li:hover ul.dropdown {
+  display: block;
+}
+
+/* line 71, ../sass/screen.scss */
+.transition {
+  transition: 0.3s;
+}
+
+/* line 75, ../sass/screen.scss */
+.h-72 {
+  height: 20rem;
+}
+
+/* line 79, ../sass/screen.scss */
+.h-86 {
+  height: 25rem;
+}
+
+/* line 83, ../sass/screen.scss */
+.h-100 {
+  height: 30rem;
+}
+
+/* line 89, ../sass/screen.scss */
+.side-navbar-item.has-dropdown .dropdown-list {
+  height: 0px;
+  visibility: hidden;
+}
+/* line 93, ../sass/screen.scss */
+.side-navbar-item.has-dropdown:hover {
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+}
+/* line 95, ../sass/screen.scss */
+.side-navbar-item.has-dropdown:hover .dropdown-list {
+  background: white;
+  height: auto;
+  visibility: visible;
+}

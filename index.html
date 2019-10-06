@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>TailwindCSS Admin Template by getidea.net</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/GrayGrids/LineIcons/LineIcons.css">
+    <link rel="stylesheet" href="assets/css/lib/morris.css">
+    <link rel="stylesheet" href="assets/css/stylesheets/screen.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- main wrapper start -->
+    <div class="main-wrapper mx-auto p-5">
+
+
+        <!-- header start -->
+        <header class="top-header">
+
+            <div class="flex">
+                <div class="w-full relative">
+                    <!-- header logo start -->
+
+                    <hr class="header-line absolute h-px">
+
+                    <div class="header-logo pl-10 relative z-10">
+                        <img src="assets/images/logo.jpg" alt="logo" class="w-56">
+                    </div>
+                    <!-- header logo end -->
+                </div>
+                <div class="w-auto flex">
+                    <ul class="header-right-nav flex items-center">
+                        <li class="inline-block relative">
+                            <a href="" class="block p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-black rounded w-12 h-12 text-center"><i class="lni-alarm"></i></a>
+                            <ul class="z-50 shadow-xl hidden bg-white rounded border border-gray-200 border-solid w-56 absolute right-0 dropdown toparrow">
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Account</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Support</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="inline-block relative">
+                            <a href="" class="block p-2 text-2xl text-gray-700 hover:bg-gray-100 hover:text-black rounded w-12 h-12 text-center"><i class="lni-heart"></i></a>
+                            <ul class="z-50 shadow-xl hidden bg-white rounded border border-gray-200 border-solid w-56 absolute right-0 dropdown toparrow">
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Account</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="" class="block p-4 py-2 bgthemecolor-onhover text-gray-900">Support</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end-->
+
+        <div class="flex flex-wrap mt-2">
+
+            <div class="xl:w-1/5 lg:w-1/4 md:w-1/3 w-full p-3">
+
+                <div class="bg-white rounded lg:h-auto h-screen">
+
+                    <!-- side navbar start -->
+                    <div class="side-navbar-main">
+
+                        <!-- user profile info -->
+                        <div class="user-profile-info p-5">
+                            <div class="flex">
+                                <div class="w-1/2">
+                                    <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" class="rounded-full w-full block shadow-2xl" alt="profile image">
+                                </div>
+                                <div class="w-full flex items-center">
+                                    <div class="px-3 leading-tight">
+                                        <h3 class="text-xl font-semibold text-gray-800">Jackie Turner</h3>
+                                        <p class="text-xs capitalize text-gray-900">Meeting Organizer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- user profile info -->
+
+                        <hr class="h-px bg-gray-100 my-3">
+
+                        <!-- side navbar menu start -->
+                        <div class="side-menu-navbar">
+                            <ul>
+                                <li>
+                                    <a href="index.html" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-dashboard text-2xl"></i> Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms.html" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-inbox text-2xl"></i> Forms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table.html" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-database text-2xl"></i> Table
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blank.html" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-empty-file text-2xl"></i> Blank Page
+                                    </a>
+                                </li>
+                                <li class="side-navbar-item has-dropdown">
+                                    <a href="" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-emoji-friendly text-2xl"></i> Table List
+                                        <i class="text-xs lni-chevron-down"></i>
+                                    </a>
+                                    <ol class="dropdown-list">
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Create New</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Upcoming</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">View Calender</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Setting</a></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <a href="" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-investment text-2xl"></i> Suggestions
+                                    </a>
+                                </li>
+                                <li class="side-navbar-item has-dropdown">
+                                    <a href="" class="border-b border-gray-300 transition text-gray-900 tracking-wide border-solid py-4 px-2 bgthemecolor-onhover block text-xl pl-12 relative font-light">
+                                        <i class="left-0 text-gray-700 w-10 pl-3 absolute h-full top-0 flex items-center inline-block lni-notepad text-2xl"></i> Notes & Tasks
+                                        <i class="text-xs lni-chevron-down"></i>
+                                    </a>
+                                    <ol class="dropdown-list">
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Create New</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Upcoming</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">View Calender</a></li>
+                                        <li><a class="pl-12 p-2 border-b bgthemecolor-onhover border-solid text-gray-800 border-gray-300 block" href="#">Setting</a></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- side navbar menu end -->
+
+                    </div>
+                    <!-- side navbar end -->
+
+                </div>
+
+            </div>
+            <div class="xl:w-4/5 lg:w-3/4 md:w-2/3 w-full p-3">
+                <div class="inner">
+
+                    <div class="flex flex-wrap">
+
+                        <div class="md:w-1/3 w-full md:p-6 pb-6 md:pl-0 md:pt-0">
+
+                            <!-- new likes start -->
+                            <div class="new-likes hover:shadow-xl transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header relative pb-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">New Likes</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- new dash-box-body start -->
+                                <div class="dash-box-body py-4 flex items-center justify-center">
+                                    <div class="inner leading-tight text-center">
+                                        <div class="text-6xl font-hairline text-gray-900 block mb-0 relative text-center pr-6 inline-block">15
+                                            <i class="absolute bottom-0 text-lg right-0 lni-thumbs-up pb-4 text-gray-800"></i>
+                                        </div>
+                                        <span class="text-sm font-hairline text-gray-700 block lowercase mt-0">+4 last week</span>
+                                    </div>
+                                </div>
+                                <!-- new dash-box-body end -->
+
+                            </div>
+                            <!-- new likes end -->
+
+                        </div>
+
+                        <!-- new upcoming events start -->
+                        <div class="md:w-1/3 w-full md:p-6 pb-6 md:pl-0 md:pt-0">
+
+                            <div class="upcoming-events hover:shadow-xl transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header relative pb-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Upcoming Events</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- new dash-box-body start -->
+                                <div class="dash-box-body py-4 flex items-center justify-center">
+                                    <div class="inner leading-tight text-center">
+                                        <div class="text-6xl font-hairline text-gray-900 block mb-0 relative text-center pr-6 inline-block">8
+                                            <i class="absolute bottom-0 text-lg right-0 lni-share pb-4 text-gray-800"></i>
+                                        </div>
+                                        <span class="text-sm font-hairline text-gray-700 block lowercase mt-0">1 created by you</span>
+                                    </div>
+                                </div>
+                                <!-- new dash-box-body end -->
+
+                            </div>
+
+                        </div>
+                        <!-- new upcoming events end -->
+
+                        <!-- new panding tasks start -->
+                        <div class="md:w-1/3 w-full md:p-6 pb-6 md:pl-0 md:pt-0 pr-0">
+
+                            <div class="pending-tasks hover:shadow-xl transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header relative pb-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Pending tasks</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- new dash-box-body start -->
+                                <div class="dash-box-body py-4 flex items-center justify-center">
+                                    <div class="inner leading-tight text-center">
+                                        <div class="text-6xl font-hairline text-gray-900 block mb-0 relative text-center pr-6 inline-block">15
+                                            <i class="absolute bottom-0 text-lg right-0 lni-layers pb-4 text-gray-800"></i>
+                                        </div>
+                                        <span class="text-sm font-hairline text-gray-700 block lowercase mt-0">7 due this week</span>
+                                    </div>
+                                </div>
+                                <!-- new dash-box-body end -->
+
+                            </div>
+
+                        </div>
+                        <!-- new panding tasks end -->
+
+
+                    </div>
+                    <!-- flex -->
+
+
+                    <div class="flex flex-wrap">
+
+                        <div class="lg:w-2/3 w-full md:p-6 pb-6 md:pl-0 md:pt-0 h-100">
+
+                            <!-- New Engagment Status start -->
+                            <div class="new-engagment-status hover:shadow-xl relative transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header absolute left-0 top-0 z-10 w-full p-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">New Engagment Status</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- new dash-box-body start -->
+                                <div class="dash-box-body py-4">
+                                    <div class="inner pt-12">
+                                        <div id="areachart" class="absolute w-full bottom-0 left-0"></div>
+                                    </div>
+                                </div>
+                                <!-- new dash-box-body end -->
+
+                            </div>
+                            <!-- New Engagment Status end -->
+
+                        </div>
+
+                        <!-- new Top Active Contacts start -->
+                        <div class="lg:w-1/3 w-full md:p-6 pb-6 md:pl-0 md:pt-0 pr-0">
+
+                            <div class="upcoming-events hover:shadow-xl transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header relative pb-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Top Active Contacts</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- new dash-box-body start -->
+                                <div class="dash-box-body py-4">
+                                    <div class="inner">
+
+                                        <!-- flex row my-2 start -->
+                                        <div class="flex row">
+                                            <div class="w-auto flex items-center">
+                                                <img src="assets/images/user1.jpeg" class="object-cover transition border-2 border-black hover:shadow-2xl rounded-full w-24 h-24 block" alt="user image">
+                                            </div>
+                                            <div class="w-1/2 pl-4">
+                                                <div class="py-5">
+                                                    <h3 class="text-xl">Adam Turner</h3>
+                                                    <p class="text-xs text-gray-600">180 Meetings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- flex row end -->
+                                        <hr class="h-px bg-gray-100 my-4 w-full">
+                                        <!-- flex row start -->
+                                        <div class="flex row">
+                                            <div class="w-auto flex items-center">
+                                                <img src="assets/images/user2.jpg" class="object-cover transition border-2 border-black hover:shadow-2xl rounded-full w-24 h-24 block" alt="user image">
+                                            </div>
+                                            <div class="w-1/2 pl-4">
+                                                <div class="py-5">
+                                                    <h3 class="text-xl">John Waen Jr</h3>
+                                                    <p class="text-xs text-gray-600">166 Meetings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- flex row end -->
+                                        <hr class="h-px bg-gray-100 my-4 w-full">
+                                        <!-- flex row start -->
+                                        <div class="flex row">
+                                            <div class="w-auto flex items-center">
+                                                <img src="assets/images/user3.jpg" class="object-cover transition border-2 border-black hover:shadow-2xl rounded-full w-24 h-24 block" alt="user image">
+                                            </div>
+                                            <div class="w-1/2 pl-4">
+                                                <div class="py-5">
+                                                    <h3 class="text-xl">karan Johar</h3>
+                                                    <p class="text-xs text-gray-600">150 Meetings</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- flex row my-2 end -->
+
+
+                                    </div>
+                                </div>
+                                <!-- new dash-box-body end -->
+
+                            </div>
+
+                        </div>
+                        <!-- new Top Active Contacts end -->
+
+
+
+                    </div>
+                    <!-- flex -->
+
+
+                    <!-- social media start -->
+
+                    <div class="flex flex-wrap">
+
+                        <div class="w-full md:p-6 pb-6 md:pl-0 md:pt-0">
+
+                            <!-- New Engagment Status start -->
+                            <div class="new-engagment-status hover:shadow-xl relative transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header absolute left-0 top-0 z-10 w-full p-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Social Media Engagment</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- social media inner start -->
+
+                                <div class="inner mt-16">
+                                    <div class="flex flex-wrap my-24 mb-12">
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-facebook"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">facebook Likes</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-twitter"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">twitter followers</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-instagram"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">instagram followers</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-linkedin"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">linkedin connections</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-snapchat"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">snapchat followers</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                        <!-- social media item start -->
+                                        <div class="xl:w-1/6 lg:w-1/3 w-full xl:mb-0 mb-12 text-center rounded">
+                                            <div class="icon border border-gray-300 text-gray-800 w-24 h-24 rounded-full m-auto mb-4 flex items-center justify-center">
+                                                <i class="text-4xl lni-behance"></i>
+                                            </div>
+                                            <div class="text-base text-gray-700 font-light">3 New</div>
+                                            <div class="text-sm text-gray-500 lowercase font-light">Behance followers</div>
+                                        </div>
+                                        <!-- social media item end -->
+
+                                    </div>
+                                </div>
+
+                                <!-- social media inner end -->
+
+
+                            </div>
+                            <!-- New Engagment Status end -->
+
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- flex -->
+
+                    <!-- social media end -->
+
+
+
+
+                    <!-- posts start -->
+
+                    <div class="flex flex-wrap">
+
+
+
+                        <div class="md:w-1/2 w-full md:p-6 pb-6 md:pl-0 md:pt-0">
+
+                            <!-- New Trending start -->
+                            <div class="new-engagment-status hover:shadow-xl relative transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header absolute left-0 top-0 z-10 w-full p-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Trending Posts</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- posts inner start -->
+
+                                <div class="inner mt-16">
+
+                                    <table class="text-left w-full border-collapse">
+                                        <!--Border collapse doesn't work on this site yet but it's available in newer tailwind versions -->
+                                        <thead>
+                                            <tr>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">#</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Title</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Date Created</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">1</td>
+                                                <td class="py-3 px-6 border-b">How to create a website</td>
+                                                <td class="py-3 px-6 border-b">20 Jun, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">2</td>
+                                                <td class="py-3 px-6 border-b">Learn php from basic to advance</td>
+                                                <td class="py-3 px-6 border-b">10 Feb, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">3</td>
+                                                <td class="py-3 px-6 border-b">Udemy course complete</td>
+                                                <td class="py-3 px-6 border-b">12 Jun, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">4</td>
+                                                <td class="py-3 px-6 border-b">How to create a website in HTML</td>
+                                                <td class="py-3 px-6 border-b">11 Nov, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">5</td>
+                                                <td class="py-3 px-6 border-b">How to create a website in CSS</td>
+                                                <td class="py-3 px-6 border-b">04 Mar, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">6</td>
+                                                <td class="py-3 px-6 border-b">Learn CSS3 Animations</td>
+                                                <td class="py-3 px-6 border-b">22 Apr, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">7</td>
+                                                <td class="py-3 px-6 border-b">what is GSAP?</td>
+                                                <td class="py-3 px-6 border-b">15 Jul, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- posts inner end -->
+
+
+                            </div>
+                            <!-- New Trending end -->
+
+                        </div>
+
+
+                        <div class="md:w-1/2 w-full md:p-6 pb-6 md:pl-0 md:pt-0">
+
+                            <!-- New Latest start -->
+                            <div class="new-engagment-status hover:shadow-xl relative transition dash-box p-3 h-full relative bg-white rounded">
+
+                                <!-- new dash-box-header start -->
+                                <header class="dash-box-header absolute left-0 top-0 z-10 w-full p-3">
+                                    <h3 class="uppercase text-gray-900 tracking-wide">Latest Posts</h3>
+                                    <hr class="absolute bottom-0 w-1/3 h-1 bgthemecolor rounded-full">
+                                </header>
+                                <!-- new dash-box-header end -->
+
+                                <!-- posts inner start -->
+
+                                <div class="inner mt-16">
+
+                                    <table class="text-left w-full border-collapse">
+                                        <!--Border collapse doesn't work on this site yet but it's available in newer tailwind versions -->
+                                        <thead>
+                                            <tr>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">#</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Title</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Date Created</th>
+                                                <th class="py-3 px-6 font-bold uppercase text-sm text-grey-dark border-b uppercase text-gray-700 tracking-wide">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">1</td>
+                                                <td class="py-3 px-6 border-b">How to create a website</td>
+                                                <td class="py-3 px-6 border-b">20 Jun, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">2</td>
+                                                <td class="py-3 px-6 border-b">Learn php from basic to advance</td>
+                                                <td class="py-3 px-6 border-b">10 Feb, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">3</td>
+                                                <td class="py-3 px-6 border-b">Udemy course complete</td>
+                                                <td class="py-3 px-6 border-b">12 Jun, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">4</td>
+                                                <td class="py-3 px-6 border-b">How to create a website in HTML</td>
+                                                <td class="py-3 px-6 border-b">11 Nov, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">5</td>
+                                                <td class="py-3 px-6 border-b">How to create a website in CSS</td>
+                                                <td class="py-3 px-6 border-b">04 Mar, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">6</td>
+                                                <td class="py-3 px-6 border-b">Learn CSS3 Animations</td>
+                                                <td class="py-3 px-6 border-b">22 Apr, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="hover:bg-gray-100 text-gray-800 font-light">
+                                                <td class="py-3 px-6 border-b">7</td>
+                                                <td class="py-3 px-6 border-b">what is GSAP?</td>
+                                                <td class="py-3 px-6 border-b">15 Jul, 2018</td>
+                                                <td class="py-3 px-6 border-b">
+                                                    <a href="#" class="text-green-600 py-1 px-3 rounded">Edit</a>
+                                                    <a href="#" class="text-blue-600 py-1 px-3 rounded">View</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <!-- posts inner end -->
+
+
+                            </div>
+                            <!-- New Latest end -->
+
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- flex -->
+
+                    <!-- posts end -->
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <!-- main wrapper end -->
+
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script src="assets/js/lib/morris.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        new Morris.Area({
+            // ID of the element in which to draw the chart.
+            element: 'areachart',
+            resize: true,
+            fillOpacity: 0.3,
+            labels: ['Individual Score', 'Team Score'],
+            pointFillColors: ['gray'],
+            lineColors: ['gray'],
+            hideHover: 'auto',
+            behaveLikeLine: true,
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [{
+                year: '2008',
+                value: 131
+            }, {
+                year: '2009',
+                value: 51
+            }, {
+                year: '2010',
+                value: 125
+            }, {
+                year: '2011',
+                value: 77
+            }, {
+                year: '2012',
+                value: 140
+            }],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Visits']
+        });
+    </script>
+
+</body>
+
+</html>
